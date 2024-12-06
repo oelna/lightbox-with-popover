@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Popover Demo</title>
+
+	<link rel="stylesheet" href="style.css" />
+	<script src="script.js" defer></script>
+</head>
+<body>
+
+	<ul class="gallery">
+		<li>
+			<button popovertarget="my-popover">
+				<img src="test.jpg" alt="" data-large="test-large.jpg" />
+			</button>
+		</li>
+		<li>
+			<button popovertarget="my-popover">
+				<img src="test2.jpg" alt="" data-large="test2-large.jpg" />
+			</button>
+		</li>
+		<li>
+			<button popovertarget="my-popover">
+				<img src="test3.jpg" alt="" data-large="test3-large.jpg" />
+			</button>
+		</li>
+	</ul>
+
+	<div id="my-popover" popover>
+		<button popovertarget="my-popover" popovertargetaction="hide">&times;</button>
+
+		<img src="test-large.jpg" alt="" loading="lazy" />
+
+		<nav class="pagination">
+			<button class="page prev">&lt; zurück</button>
+			<button class="page next">weiter &gt;</button>
+		</nav>
+	</div>
+
+</body>
+</html>

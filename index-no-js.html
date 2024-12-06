@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Popover Demo (without Javascript)</title>
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+	<ul class="gallery">
+		<li>
+			<button popovertarget="my-popover">
+				<img src="test.jpg" alt="" />
+			</button>
+		</li>
+		<li>
+			<button popovertarget="my-popover2">
+				<img src="test2.jpg" alt="" />
+			</button>
+		</li>
+		<li>
+			<button popovertarget="my-popover3">
+				<img src="test3.jpg" alt="" />
+			</button>
+		</li>
+	</ul>
+
+	<div id="my-popover" popover>
+		<button popovertarget="my-popover" popovertargetaction="hide">&times;</button>
+
+		<img src="test-large.jpg" alt="" loading="lazy" />
+	</div>
+
+	<div id="my-popover2" popover>
+		<button popovertarget="my-popover2" popovertargetaction="hide">&times;</button>
+
+		<img src="test2-large.jpg" alt="" loading="lazy" />
+	</div>
+
+	<div id="my-popover3" popover>
+		<button popovertarget="my-popover3" popovertargetaction="hide">&times;</button>
+
+		<img src="test3-large.jpg" alt="" loading="lazy" />
+	</div>
+
+</body>
+</html>
